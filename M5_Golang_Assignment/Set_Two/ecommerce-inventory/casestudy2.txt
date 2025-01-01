@@ -1,0 +1,56 @@
+Case Study 2: Building an E-Commerce Microservice Using Go Rest API 
+and Middleware 
+Objective: 
+Develop a standalone Go-based microservice for managing product inventory in an e
+commerce platform, emphasizing high performance and modularity. 
+Background: 
+An e-commerce company is transitioning to a microservices architecture. They need an 
+inventory service to manage product stock, including CRUD operations and real-time 
+updates. The service must integrate with other microservices like the order service and 
+user service. 
+Solution: 
+1. Go HTTP Server: 
+o A Go HTTP server handles incoming requests for the inventory 
+microservice. 
+o Routes include: 
+▪ POST /product: Add a new product. 
+▪ GET /product/{id}: Fetch product details by ID. 
+▪ PUT /product/{id}: Update stock details for a product. 
+▪ DELETE /product/{id}: Remove a product from the inventory. 
+2. Go REST API: 
+o RESTful API design ensures clear and consistent interactions with the 
+microservice. 
+o Pagination is implemented for fetching large inventories using query 
+parameters (?page=1&limit=10). 
+3. SQLite Connectivity: 
+o SQLite is used for prototyping and small-scale deployments. 
+o Database schema includes: 
+▪ products table with fields like id, name, description, price, stock, 
+and category_id. 
+o SQL Queries: 
+▪ Add Product: INSERT INTO products (name, description, price, 
+stock, category_id) VALUES (?, ?, ?, ?, ?) 
+▪ Update Stock: UPDATE products SET stock = ? WHERE id = ?. 
+4. Middleware: 
+o Custom middleware for: 
+▪ Request Authentication: JWT-based token validation. 
+▪ Input Validation: Ensure required fields are present in the JSON 
+payload. 
+▪ Rate Limiting: Prevent abuse of API endpoints. 
+▪ Logging: Log API requests and responses with metadata (IP 
+address, timestamp, method). 
+5. Go Air Integration: 
+o Go Air enhances development by providing instant reloading during 
+iterative testing. 
+6. Inter-Service Communication: 
+o The service communicates with other microservices via REST APIs or 
+message queues like RabbitMQ. For example: 
+▪ An order service calls the inventory service to deduct stock when 
+an order is placed. 
+Outcome: 
+The inventory microservice is successfully integrated into the e-commerce platform, 
+offering: 
+• High performance due to Go’s lightweight concurrency model. 
+• Scalability and modularity, enabling independent deployment and updates. 
+• Reduced development and debugging time using Go Air. 
+• Enhanced security and reliability with robust middleware implementations. 
