@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Organizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <main>
+      <section class="input-section">
+        <input type="text" id="newTask" placeholder="Add a task" />
+        <button id="addButton">Add</button>
+      </section>
+      <section class="task-section">
+        <ul id="tasksContainer"></ul>
+      </section>
+      <footer>
+        <p id="taskSummary">No tasks yet!</p>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #eef2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+}
+
+header h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.task-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.task-section li.completed {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+.task-section li .actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.task-section li .actions button:hover {
+  background-color: #bdc3c7;
+}
+
+footer p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-top: 20px;
+}

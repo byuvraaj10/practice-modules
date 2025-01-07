@@ -1,0 +1,24 @@
+Step 1: Project Setup  
+1. Open your terminal or command prompt.  
+2. Create a folder named "sample-project" and navigate into it.  
+3. Initialize a new Git repository.  
+4. Create a new repository on GitHub called "sample-project".  
+5. Link your local repository to the GitHub repository using the provided remote URL.  
+6. Create a `README.md` file with the text "# Sample Project", add it to Git, commit the changes, and push them to the `main` branch on GitHub.  
+
+Step 2: Modifying the README.md File  
+1. Create a new branch named "feature/update-readme" and switch to it.  
+2. Open the `README.md` file in a text editor and add the following content:  
+   - "# Sample Project"  
+   - "This project demonstrates Git and GitHub workflows."  
+3. Save the changes, stage them, commit with a meaningful message, and push the branch to GitHub.  
+
+Step 3: Merging Changes  
+1. Open GitHub and create a pull request for the "feature/update-readme" branch.  
+2. Add a description to the pull request and submit it.  
+3. Review the changes and merge the pull request into the `main` branch.  
+
+Step 4: Cleaning Up the Feature Branch  
+1. Switch back to the `main` branch in your local repository.  
+2. Delete the "feature/update-readme" branch locally.  
+3. Remove the "feature/update-readme" branch from the GitHub repository.  
